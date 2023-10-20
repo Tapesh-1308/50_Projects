@@ -60,3 +60,17 @@ h3 {
         width: 100vw;
     }
 }
+
+footer {
+    color: #050505;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+}
+
+footer span {
+    padding: 0 5px;
+    color: rgb(255, 44, 44);
+}
