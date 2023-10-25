@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #3494e4;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    height: calc(100vh - 10px);
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+h1 {
+    margin: 10px 0 0;
+}
+
+h3 {
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.cup {
+    background-color: #fff;
+    border: 4px solid #144fc6;
+    color: #144fc6;
+    border-radius:  0 0 40px 40px;
+    height: 330px;
+    width: 150px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.man {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 330px;
+}
+
+img {
+    filter: drop-shadow(0px 0px black);
+    width: 100%;
+    height: 100%;
+}
+
+.bg {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    
+}
+
+.cup.cup-small {
+    height: 95px;
+    width: 50px;
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    transition: 0.3s ease;
+}
+
+.cup.cup-small.full {
+    background-color: #6ab3f8;
+    color: #fff;
+}
+
+.cups {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.remained, .filled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    color: white;
+}
+
+.remained {
+    position: absolute;
+    top: 30px;
+    transition: 0.3s ease;
+}
+
+.remained span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.remained small {
+    font-size: 12px;
+}
+
+.percentage {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    background-color: #6ab3f8;
+    height: 0px;
+    transition: 0.3s ease;
+}
+
+.filled {
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+
+.text {
+    text-align: center;
+    margin: 0 0 5px;
+}
+
+footer {
+    color: #f6f2f2;
+    display: flex;
+    justify-content: center;
+    padding: 10px;    
+    text-shadow: 0 0 15px black;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+footer span {
+    padding: 0 5px;
+    color: rgb(255, 44, 44);
+}
+  
+@media only screen and (max-width: 800px) {
+    .container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    footer {
+        bottom: auto;
+    }
+}
+
