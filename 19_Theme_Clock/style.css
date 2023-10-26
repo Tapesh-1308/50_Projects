@@ -139,3 +139,20 @@ body {
     text-align: center;
     padding-top: 2px;
 }
+
+
+
+footer {
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+}
+
+footer span {
+    padding: 0 5px;
+    color: rgb(255, 44, 44);
+}
+  
