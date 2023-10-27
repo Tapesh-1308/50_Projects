@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #111;
+}
+
+.nav {
+    width: auto;
+    height: 40px;
+    position: fixed;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity .5s;
+    background: #fff;
+    background: #403A3E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #BE5869, #403A3E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #BE5869, #403A3E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+
+img {
+    display: none;
+}
+
+.nav div, button, input {
+    margin: 5px;
+}
+
+.nav:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.clr {
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: transform .5s;
+}
+
+.clr:hover {
+    transform: scale(1.2);
+}
+
+.clr:nth-child(1){
+    background-color: #000;
+}
+
+.clr:nth-child(2){
+    background-color: red;
+}
+
+.clr:nth-child(3){
+    background-color: orange;
+}
+
+.clr:nth-child(4){
+    background-color: blue;
+}
+
+.clr:nth-child(5){
+    background-color: purple;
+}
+
+.clr:nth-child(6){
+    background-color: yellowgreen;
+}
+
+.clr:nth-child(7){
+    background-color: yellow;
+}
+
+.clr:nth-child(8){
+    background-color: #fff;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    background-color: #03bb56;
+    color: #fff;
+    border: 3px solid white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.save {
+    background-color: #0f65d4;
+}
+
+input[type="color"] {
+    width: 60px;
+    height: 35px;
+}
+
+#ageOutputId {
+    color: white;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+#ageInputId {
+    background: linear-gradient(to right, #000428 0%, #004e92 100%);
+    height: 10px;
+    outline: none;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    border-radius: 5px;
+    border: 1px solid white;
+    accent-color: white;
+}
+
+.emoji {
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+
+
+footer {
+    color: #f6f2f2;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer span {
+    padding: 0 5px;
+    color: rgb(255, 44, 44);
+}
+  

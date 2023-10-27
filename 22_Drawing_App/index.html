@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charcolor="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App 🎨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="nav">
+        <div class="clr" data-color="#000"></div>
+        <div class="clr" data-color="red"></div>
+        <div class="clr" data-color="orange"></div>
+        <div class="clr" data-color="blue"></div>
+        <div class="clr" data-color="purple"></div>
+        <div class="clr" data-color="yellowgreen"></div>
+        <div class="clr" data-color="yellow"></div>
+        <div class="clr" data-color="#fff"></div>
+
+        <button class="clear">Clear</button>
+        <button class="save">Download</button>
+
+        <input type="color" value="#ffffff" id="favcolor">
+        <input type="range" name="ageInputName" id="ageInputId" value="5" min="1" max="10" oninput="ageOutputId.value = ageInputId.value">
+        <output id="ageOutputId">5</output>
+        <div class="emoji">🎨</div>
+
+    </div>
+    <footer> Made with <span>❤</span> by Tapesh</footer>
+    <script src="script.js"></script>
+</body>
+</html>
