@@ -20,7 +20,7 @@ clipboardBtn.addEventListener("click", () => {
     document.body.appendChild(textarea);
     textarea.select();
     document.execCommand("copy");
-    setTimeout(() => textarea.remove(), 5000);
+    textarea.remove();
     
     alert('Password copied to clipboard!');
 });
