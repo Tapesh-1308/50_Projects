@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-container {
+    padding: 20px;
+    position: relative;
+}
+
+.carousel {
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+    border-radius: 8px;
+    border: 1px solid rgba(110, 110, 110, 0.4);
+}
+
+.image-container {
+    display: flex;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+    justify-content: space-between;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: #000;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.3), -1px 2px 10px rgba(0,0,0,.3);
+    
+}
+
+.btn:nth-child(1) {
+    left: 0px;
+}
+
+.btn:nth-child(2) {
+    right: 0px;
+}
+.btn:hover {
+    background-color: #e5e5e5;
+}
+  
+.btn:focus {
+    outline: none;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    font-weight: 550;
+}
+
+footer span {
+    padding: 0 5px;
+    color: rgb(255, 44, 44);
+}
+  
