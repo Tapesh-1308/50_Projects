@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1B1D1E;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    border-radius: 5px;
+    width: 350px;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px rgba(255,255,255,.2);
+}
+
+
+
+.title {
+    margin: 0;
+}
+
+.subtitle {
+    display: inline-block;
+    margin: 5px 0 20px;
+    opacity: .8;
+}
+
+.header {
+    background-color: #3e57db;
+    color: #fff;
+    padding: 30px 20px;
+    font-size: 110%;
+}
+
+.header input {
+    background-color: rgba(0,0,0,.3);
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 100%;
+    margin: 0;
+}
+
+.header input:focus {
+    outline: none;
+}
+
+.header input::placeholder {
+    color: #b8b8b8;
+}
+
+.user-list {
+    background-color: #181A1B;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    color: #E8E6E3;
+}
+
+.user-list::-webkit-scrollbar {
+    background-color: #6f6f6f;
+    width: 7px;
+}
+.user-list::-webkit-scrollbar-thumb:hover {
+    background-color: #3c4144;
+}
+
+.user-list::-webkit-scrollbar-thumb {
+    background-color: #2a2d2f;
+}
+
+.user-list li {
+    display: flex;
+    padding: 10px 15px 0;
+    background-color: #2a2d2f;
+    margin-bottom: 12px;
+    border-radius: 26px;
+    border: 1px solid #3c4144;
+    box-shadow: 1px 1px 2px #3c4144;
+    cursor: pointer;
+}
+  
+.user-list img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 45px;
+    width: 45px;
+    border: 2px solid #3e57db;
+}
+
+.user-list .user-info {
+    margin-left: 15px;
+}
+
+.user-list .user-info h4 {
+    margin: 2px 0 5px;
+}
+
+.user-list .user-info p {
+    margin: 0 0 10px;
+    font-size: 12px;
+}
+
+
+.user-list li.hide {
+    display: none;
+}
+
+
+footer {
+    color: #c2c2c2;
+    position: absolute;
+    bottom: 10px;
+}
+
+footer span {
+    padding: 0 5px;
+    color: rgb(255, 44, 44);
+}
+  
