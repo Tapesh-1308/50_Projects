@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191C1D;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    color: #e8e6e3;
+}
+
+.container {
+    background-color: #181A1B;
+    border: 2px solid rgb(140, 130, 115);
+    border-radius: 10px;
+    padding: 30px 45px;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.code-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.code {
+    border-radius: 5px;
+    font-size: 75px;
+    height: 120px;
+    width: 100px;
+    border: 1px solid rgb(53, 57, 59);
+    margin: 1%;
+    text-align: center;
+    font-weight: 300;
+    caret-color: transparent;
+    background-color: #3B3B3B;
+    color: #fff;
+}
+
+.code::-webkit-outer-spin-button,
+.code::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    
+}
+
+.code:valid {
+    border-color: rgb(26, 99, 148);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px -5px;
+}
+
+.code:focus {
+    outline: none;
+    border: 1px solid rgb(125, 125, 125)
+}
+
+.info {
+    display: inline-block;
+    padding: 10px;
+    line-height: 20px;
+    max-width: 400px;
+    border-radius: 5px;
+    background-color: rgb(36, 39, 40);
+    color: rgb(157, 148, 136);
+}
+
+@media (max-width: 600px) {
+    .code-container {
+        flex-wrap: wrap;
+    }
+
+    .code {
+        font-size: 60px;
+        height: 80px;
+        max-width: 70px;
+    }
+}
+
+
+footer {
+    position: absolute;
+    bottom: 20px;
+}
+
+footer span {
+    padding: 0 5px;
+    color: rgb(255, 44, 44);
+}
+  
