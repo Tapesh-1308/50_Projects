@@ -11,17 +11,11 @@ const clipboardBtn = document.getElementById("clipboard");
 
 // copy functionality
 clipboardBtn.addEventListener("click", () => {
-    const textarea = document.createElement("textarea");
     const psw = resultEl.innerText;
 
     if(!psw) { return; }
 
-    textarea.value = psw;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand("copy");
-    textarea.remove();
-    
+    navigator.clipboard.writeText(psw);
     alert('Password copied to clipboard!');
 });
 
