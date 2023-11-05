@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    min-width: 240px;
+    min-height: 320px;
+    background: #333;
+    padding: 32px 24px 24px;
+    border-radius: 16px;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 00.25),
+        8px 8px 56px rgba(0, 0, 0, 0.25),
+        inset -4px -4px 12px rgba(0, 0, 0, 0.5),
+        inset 4px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.calculator {
+   position: relative;
+}
+
+.calculator .value {
+    position: relative;
+    height: 80px;
+    left: 8px;
+    width: calc(100% - 16px);
+    border: none;
+    outline: none;
+    background: #a7af7c;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 00.75);
+    text-align: right;
+    padding: 8px;
+    font-size: 1.6em;
+}
+
+.key-container{
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    width: 375px;
+}
+
+.calculator .keys {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    transform-origin: bottom right;
+    transform: scale(1.21);
+    transition: transform .4s linear;
+}
+
+
+.keys.scientific {
+    transform: scale(1);
+    width: 380px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.keys span {
+    border: none;
+    outline: none;
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    margin: 6.4px;
+    background: linear-gradient(180deg, #2f2f2f, #3f3f3f);
+    box-shadow: inset -6px 0 6px rgba(0, 0, 0, 0.15), inset 0 -6px 6px rgba(0, 0, 0, 0.25),
+        0 0 0 1.6px rgba(0, 0, 0, 0.75), 8px 16px 20px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 400;
+}
+
+.keys span::before {
+    content: "";
+    position: absolute;
+    top: 2.4px;
+    left: 3.2px;
+    bottom: 11.2px;
+    right: 9.6px;
+    background: linear-gradient(90deg, #2d2d2d, #4d4d4d);
+    border-radius: 8px;
+    box-shadow: -4px -4px 12px rgba(0,0,0,0.1),
+    8px 4px 8px rgba(0, 0, 0, 0.15);
+    border-left: 1px solid #0004;
+    border-bottom: 1px solid #0004;
+    border-top: 1px solid #0009;
+}
+
+.keys span:active {
+    filter: brightness(1.5);
+}
+
+.keys span i {
+    position: relative;
+    font-style: normal;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.keys .clear {
+    background: #f00;
+}
+
+.keys .clear::before {
+    background: linear-gradient(90deg, #d20000, #ffffff5c);
+    border-left: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+    border-top: 1px solid #fff4;
+}
+
+.keys .plus {
+    grid-row: span 2;
+    height: 144px;
+}
+
+.keys .equal {
+    background: #2196f3;
+}
+
+.keys .equal::before {
+    background: linear-gradient(90deg, #1479c9, #ffffff5c);
+    border-left: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+    border-top: 1px solid #fff4;
+}
