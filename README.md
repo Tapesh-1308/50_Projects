@@ -22,17 +22,23 @@ This repository contains 50 projects and one Bonus project.
 
 ### [Project 05 - Blurry Loading 🌫️](https://github.com/Tapesh-1308/50_Projects/tree/main/05_Blurry_Loading)
 
+https://github.com/Tapesh-1308/50_Projects/assets/71540051/87ccb87f-9a98-4593-9ae2-ac7ba0a8d246
+
 ### [Project 06 - Scroll Animation 📜](https://github.com/Tapesh-1308/50_Projects/tree/main/06_Scroll_Animation)
 
 ![Scroll Animation](https://github.com/Tapesh-1308/50_Projects/assets/71540051/8189a943-f2cd-4130-8301-0f234cbc5eba)
 
 ### [Project 07 - Split Landing Page 🏞️](https://github.com/Tapesh-1308/50_Projects/tree/main/07_Split_Landing_Page)
 
+https://github.com/Tapesh-1308/50_Projects/assets/71540051/d0240dbe-0300-4351-9e16-4bf59be84634
+
 ### [Project 08 - Form Wave 🌊](https://github.com/Tapesh-1308/50_Projects/tree/main/08_Form_Wave)
 
 ![form wave](https://github.com/Tapesh-1308/50_Projects/assets/71540051/c8190663-38cf-493f-ae7f-4325299589e0)
 
 ### [Project 09 - Sound Board 🎵](https://github.com/Tapesh-1308/50_Projects/tree/main/09_Sound_Board)
+
+https://github.com/Tapesh-1308/50_Projects/assets/71540051/1e737638-b0f3-4435-b97f-8aff380a239e
 
 ### [Project 10 - Dad Jokes 👨‍👧‍👦](https://github.com/Tapesh-1308/50_Projects/tree/main/10_Dad_Jokes)
 
@@ -64,6 +70,8 @@ This repository contains 50 projects and one Bonus project.
 
 ### [Project 17 - Movie App 🎬](https://github.com/Tapesh-1308/50_Projects/tree/main/17_Movie_App)
 
+https://github.com/Tapesh-1308/50_Projects/assets/71540051/fe45d383-c9d5-4ec4-99db-f4e8636b74fd
+
 ### [Project 18 - Background Slider 🌅](https://github.com/Tapesh-1308/50_Projects/tree/main/18_Background_Slider)
 
 ![background slider](https://github.com/Tapesh-1308/50_Projects/assets/71540051/72113a33-0880-43c6-b792-46f68910e2ae)
@@ -94,7 +102,11 @@ This repository contains 50 projects and one Bonus project.
 
 ### [Project 25 - Sticky Navbar 📌](https://github.com/Tapesh-1308/50_Projects/tree/main/25_Sticky_Navbar)
 
+https://github.com/Tapesh-1308/50_Projects/assets/71540051/8a0211a7-30df-4a48-bc40-a4db67c18b1b
+
 ### [Project 26 - Double Vertical Slider 🎢](https://github.com/Tapesh-1308/50_Projects/tree/main/26_Double_Vertical_Slider)
+
+https://github.com/Tapesh-1308/50_Projects/assets/71540051/f970d4db-de69-4677-bc50-b7e8445569c3
 
 ### [Project 27 - Toast Notification 🍞](https://github.com/Tapesh-1308/50_Projects/tree/main/27_Toast_Notification)
 
@@ -114,17 +126,23 @@ This repository contains 50 projects and one Bonus project.
 
 ### [Project 31 - Password Generator 🔒](https://github.com/Tapesh-1308/50_Projects/tree/main/31_Password_Generator)
 
+https://github.com/Tapesh-1308/50_Projects/assets/71540051/827752d9-a07f-454a-9c19-fe963b066aaf
+
 ### [Project 32 - Good Cheap Fast 💰](https://github.com/Tapesh-1308/50_Projects/tree/main/32_Good_Cheap_Fast)
 
 ![good cheap fast](https://github.com/Tapesh-1308/50_Projects/assets/71540051/3651bd37-9784-429f-a661-eb120c57c5f6)
 
 ### [Project 33 - Notes App 📒](https://github.com/Tapesh-1308/50_Projects/tree/main/33_Notes_App)
 
+https://github.com/Tapesh-1308/50_Projects/assets/71540051/d59479c5-999b-4c73-837d-560774418c8f
+
 ### [Project 34 - Animated Countdown 🕒](https://github.com/Tapesh-1308/50_Projects/tree/main/34_Animated_Countdown)
 
 ![Animated Countdown](https://github.com/Tapesh-1308/50_Projects/assets/71540051/0491bc67-3c3e-4a0f-8704-7af612539f51)
 
 ### [Project 35 - Image Carousel 📸](https://github.com/Tapesh-1308/50_Projects/tree/main/35_Image_Carousel)
+
+https://github.com/Tapesh-1308/50_Projects/assets/71540051/d1b72288-54dc-4b62-80b5-c40b1e09b667
 
 ### [Project 36 - Hoverboard 🛹](https://github.com/Tapesh-1308/50_Projects/tree/main/36_Hoverboard)
 
@@ -143,6 +161,8 @@ This repository contains 50 projects and one Bonus project.
 ![password strength background](https://github.com/Tapesh-1308/50_Projects/assets/71540051/8f07733c-723a-4920-bf79-8290746342b9)
 
 ### [Project 40 - 3D Background Boxes 📦](https://github.com/Tapesh-1308/50_Projects/tree/main/40_3d_Background_Boxes)
+
+https://github.com/Tapesh-1308/50_Projects/assets/71540051/4c1d8c29-374b-4d0f-b371-39164d30220e
 
 ### [Project 41 - Verify Account UI 📧](https://github.com/Tapesh-1308/50_Projects/tree/main/41_Verify_Account_Ui)
 
@@ -174,7 +194,11 @@ This repository contains 50 projects and one Bonus project.
 
 ### [Project 48 - Random Image Feed 📷](https://github.com/Tapesh-1308/50_Projects/tree/main/48_Random_Image_Feed)
 
+https://github.com/Tapesh-1308/50_Projects/assets/71540051/266fe38a-5d1c-49d5-8e25-bf0d04735ab9
+
 ### [Project 49 - Todo List ✅](https://github.com/Tapesh-1308/50_Projects/tree/main/49_Todo_List)
+
+https://github.com/Tapesh-1308/50_Projects/assets/71540051/2031c6b1-b8d3-4489-b924-a38b8c719e4e
 
 ### [Project 50 - Insect Catch Game 🐞](https://github.com/Tapesh-1308/50_Projects/tree/main/50_Insect_Catch_Game)
 
