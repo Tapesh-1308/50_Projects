@@ -204,7 +204,7 @@ https://github.com/Tapesh-1308/50_Projects/assets/71540051/2031c6b1-b8d3-4489-b9
 
 ![insect catch game](https://github.com/Tapesh-1308/50_Projects/assets/71540051/5c635f28-53d3-4ac1-a65a-6715c1c4898d)
 
-### [BONUS Project - Calculator 🧮](https://github.com/Tapesh-1308/50_Projects/tree/main/BONUS_Project_Calculator)
+### [BONUS Project - Calculator 🧮](https://github.com/Tapesh-1308/50_Projects/tree/main/BONUS%20Project%20-%20Calculator)
 
 https://github.com/Tapesh-1308/50_Projects/assets/71540051/5aa24253-0791-412b-9f70-72d8be12ff6b
 
