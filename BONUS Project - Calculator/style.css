@@ -1,3 +1,8 @@
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('digital-7.regular.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +19,10 @@ body {
     overflow: hidden;
 }
 
+body.light {
+    background-color: #f8f8f8;
+}
+
 .container {
     position: relative;
     min-width: 240px;
@@ -27,24 +36,42 @@ body {
         inset 4px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
+body.light .container {
+    background: #fafafa;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 00.15),
+    8px 8px 56px rgba(0, 0, 0, 0.15),
+    inset -4px -4px 12px rgba(0, 0, 0, 0.15),
+    inset 4px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
 .calculator {
    position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
 }
 
 .calculator .value {
     position: relative;
-    height: 80px;
-    left: 8px;
-    width: calc(100% - 16px);
+    height: 90px;
+    width: 100%;
     border: none;
     outline: none;
     background: #a7af7c;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-radius: 8px;
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 00.75);
     text-align: right;
     padding: 8px;
-    font-size: 1.6em;
+    font-size: 1.8em;
+    caret-color: auto;
+    cursor: pointer;
+    font-family: "digital-clock-font", sans-serif
+}
+
+.calculator .value::placeholder {
+    font-family: consolas;
 }
 
 .key-container{
@@ -62,7 +89,7 @@ body {
     grid-template-columns: repeat(5, auto);
     transform-origin: bottom right;
     transform: scale(1.21);
-    transition: transform .4s linear;
+    transition: transform .4s ease-in-out;
 }
 
 
@@ -92,12 +119,19 @@ body {
     margin: 6.4px;
     background: linear-gradient(180deg, #2f2f2f, #3f3f3f);
     box-shadow: inset -6px 0 6px rgba(0, 0, 0, 0.15), inset 0 -6px 6px rgba(0, 0, 0, 0.25),
-        0 0 0 1.6px rgba(0, 0, 0, 0.75), 8px 16px 20px rgba(0, 0, 0, 0.4);
+        0 0 0 2px rgba(0, 0, 0, 0.75), 8px 16px 20px rgba(0, 0, 0, 0.4);
     color: #fff;
     user-select: none;
     cursor: pointer;
     border-radius: 8px;
     font-weight: 400;
+}
+
+body.light .keys span {
+    background: linear-gradient(180deg, #fafafa, #f4f4f4);
+    box-shadow: inset -6px 0 6px rgba(0, 0, 0, 0.15), inset 0 -6px 6px rgba(0, 0, 0, 0.15),
+        0 0 0 2px rgba(0, 0, 0, 0.75), 8px 16px 20px rgba(0, 0, 0, 0.25);
+    
 }
 
 .keys span::before {
@@ -116,8 +150,21 @@ body {
     border-top: 1px solid #0009;
 }
 
+body.light .keys span::before {
+    background: linear-gradient(90deg, #e6e6e6, #efefef);
+    box-shadow: -10px 10px 10px rgba(255,255,255,0.25),
+    10px 5px 10px rgba(0,0,0,0.15);
+    border-left: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+    border-top: 1px solid #fff9;
+}
+
 .keys span:active {
     filter: brightness(1.5);
+}
+
+.keys span:active {
+    filter: brightness(0.9);
 }
 
 .keys span i {
@@ -127,10 +174,20 @@ body {
     text-transform: uppercase;
 }
 
+body.light .keys span i {
+    color: #333;
+}
+
+body.light .keys .clear,
 .keys .clear {
     background: #f00;
 }
 
+body.light .keys .clear i {
+    color: #fff;
+}
+
+body.light .keys .clear::before,
 .keys .clear::before {
     background: linear-gradient(90deg, #d20000, #ffffff5c);
     border-left: 1px solid #fff4;
@@ -143,13 +200,74 @@ body {
     height: 144px;
 }
 
+body.light .keys .equal i {
+    color: #fff;
+}
+
+body.light .keys .equal,
 .keys .equal {
     background: #2196f3;
 }
 
+body.light .keys .equal::before,
 .keys .equal::before {
     background: linear-gradient(90deg, #1479c9, #ffffff5c);
     border-left: 1px solid #fff4;
     border-bottom: 1px solid #fff4;
     border-top: 1px solid #fff4;
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #333;
+    font-size: 1.5em;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25),
+    5px 5px 30px rgba(0, 0, 0, 0.25),
+    inset -2px -2px 5px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+body.light .btn {
+    background: #fafafa;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1),
+    5px 5px 30px rgba(0, 0, 0, 0.05),
+    inset -2px -2px 5px rgba(0, 0, 0, 0.1),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.btn strong {
+    display: none;
+}
+
+.btn strong.active {
+    display: block;
+}
+
+@media (max-width: 650px) {
+    .container {
+        transform: scale(0.8);
+    }
+}
+@media (max-width: 350px) {
+    .key-container {
+        width: 260px;
+    }
+
+    .keys span {
+        height: 40px;
+        width: 40px;
+    }
+    .keys .plus {
+        height: 90px;
+    }
 }
